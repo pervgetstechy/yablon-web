@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from '@components/Card';
+import Deck from '@components/Deck';
 import Layout from './components/Layout';
 
 const Root = () => (
   <Layout>
     <div className="yl-room">
-      <Card reveal={false} value={1} suit="club"/>
+      <Deck />
     </div>
   </Layout>
 );

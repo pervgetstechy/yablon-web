@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { valuePropValidator, suitPropValidator, sizePropValidator } from './validators';
 import svgCards from 'svg-cards/svg-cards-indented.svg';
 import './style.scss';
-
-export const suits = ['club', 'diamond', 'heart', 'spade'];
-export const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king'];
-export const sizes = ['sm', 'lg'];
 
 class Card extends Component {
   render() {
@@ -26,10 +21,8 @@ class Card extends Component {
 }
 
 Card.propTypes = {
-  value: valuePropValidator,
-  suit: suitPropValidator,
   reveal: PropTypes.bool,
-  size: suitPropValidator
+  size: PropTypes.string
 };
 
 Card.defaultProps = {

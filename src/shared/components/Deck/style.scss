@@ -6,6 +6,10 @@ $deck-stack-distance: 12px;
   border: 1px solid green;
   width: calc(#{$card-sm-width} * 2 + #{$deck-stack-distance});
 
+  &.unstacked {
+    width: $card-sm-width;
+  }
+
   .yl-deck-stack {
     margin-left: $deck-stack-distance;
   }
