@@ -1,0 +1,12 @@
+@import '../../../resources/sass/variables';
+
+$deck-stack-distance: 12px;
+
+.yl-deck {
+  border: 1px solid green;
+  width: calc(#{$card-sm-width} * 2 + #{$deck-stack-distance});
+
+  .yl-deck-stack {
+    margin-left: $deck-stack-distance;
+  }
+}

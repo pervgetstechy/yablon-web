@@ -1,0 +1,11 @@
+@import '../../../resources/sass/variables';
+
+.yl-card {
+  width: $card-sm-width;
+  height: $card-sm-height;
+
+  &.lg {
+    width: calc(#{$card-sm-width} * 2);
+    height: calc(#{$card-sm-height} * 2);
+  }
+}

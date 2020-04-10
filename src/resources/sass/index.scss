@@ -1,1 +1,18 @@
+@import './variables';
 @import './vendor';
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.yl-room {
+  border: 1px solid red;
+  width: 100%;
+  background-image: url('../../resources/images/table.jpg');
+}
